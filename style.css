@@ -1,0 +1,29 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto; padding: 24px 20px 64px; max-width: 760px;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  line-height: 1.85; color: #2f2c26; background: #fbf8f1;
+  -webkit-text-size-adjust: 100%;
+}
+/* アプリ本体の配色(src/theme.ts の bg #1b1b2f / text #f0e6d2 / gold #f5c542)に寄せる */
+@media (prefers-color-scheme: dark) { body { color: #f0e6d2; background: #1b1b2f; } }
+header { border-bottom: 2px solid #f5c542; padding-bottom: 14px; margin-bottom: 28px; }
+h1 { font-size: 1.6rem; margin: 0 0 4px; }
+h2 { font-size: 1.15rem; margin: 34px 0 10px; padding-left: 10px; border-left: 4px solid #f5c542; }
+h3 { font-size: 1rem; margin: 22px 0 6px; }
+.sub { color: #8d8579; font-size: .85rem; margin: 0; }
+@media (prefers-color-scheme: dark) { .sub { color: #a79f92; } }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: .9rem; display: block; overflow-x: auto; }
+th, td { border: 1px solid #e2dcd0; padding: 7px 10px; text-align: left; vertical-align: top; }
+th { background: #f5f0e4; }
+@media (prefers-color-scheme: dark) { th { background: #2a2a45; } th, td { border-color: #3d3d63; } }
+a { color: #2f6fd0; }
+@media (prefers-color-scheme: dark) { a { color: #5aa9ff; } }
+code { background: #f0ebdf; padding: 1px 5px; border-radius: 4px; font-size: .88em; }
+@media (prefers-color-scheme: dark) { code { background: #2a2a45; } }
+ul { padding-left: 1.3em; }
+.note { background: #f5f0e4; border-radius: 10px; padding: 12px 16px; font-size: .9rem; }
+@media (prefers-color-scheme: dark) { .note { background: #2a2a45; } }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e2dcd0; font-size: .8rem; color: #8d8579; }
+@media (prefers-color-scheme: dark) { footer { border-color: #3d3d63; color: #a79f92; } }
